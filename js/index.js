@@ -13,7 +13,7 @@ $(document).ready(function() {
             loopBottom: true,
             navigation: {
                 'position': 'left',
-                'tooltips': ['Home', 'Projects', 'Professions', 'Education', 'Internship', 'Jobs Preferred', 'Contact Me']
+                'tooltips': ['主页', '项目', '教育', 'Education', 'Internship', '技术', '更多']
             },
             onLeave: function(index, nextIndex, direction) {
                 var $pages = $('.section');

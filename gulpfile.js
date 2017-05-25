@@ -12,7 +12,6 @@ gulp.task('compass', function() {
         }))
         .pipe(gulp.dest('css'));
 });
-
 gulp.task('vendor', function() {
     gulp.src(['./bower_components/pagepiling.js/jquery.pagepiling.min.js',
             './bower_components/pagepiling.js/jquery.pagepiling.css'])
