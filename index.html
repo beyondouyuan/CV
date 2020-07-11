@@ -2,162 +2,344 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-38205696-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
-    <meta name="viewport" content="width=100%, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>前端工程师-欧援</title>
-    <link rel="shortcut icon" href="../blog/img/me.ico" />
-    <link rel="stylesheet" href="vendor/jquery.pagepiling.css" type="text/css" />
-    <link rel="stylesheet" href="css/main.css" type="text/css" />
-    <style type="text/css">
-    /* .canvas-box {
-        position: absolute;
-        height: 100%;
-        z-index: -1;
-    }
-
-    canvas {
-        cursor: crosshair;
-        display: block;
-        height: 100%;
-    } */
-    </style>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="pagepiling">
-        <div class="section center" id="home">
-            <!-- <div id="canvas-box" class="canvas-box">
-                <canvas id="canvas">Canvas is not supported in your browser.</canvas>
-            </div> -->
-            <img id="avatar" src="img/avatar.png" />
-            <h1 id="title">欧援</h1>
-            <p id="subtitle">一腔热血的激情 · 一夜失眠的创意 · 一个像素的执着</p>
-            <h4>前端工程师</h4>
-            <p>email:<a href="mailto:oujunyuan@163.com" class="highlight">oujunyuan@163.com</a></p>
-            <p>phone:<a href="#" class="highlight">18620902160</a></p>
-        </div>
-        <div class="section" id="project">
-            <h1>项目经验</h1>
-            <div class="row">
-                <div class="col-2 center">
-                    <a class="circle-img" href="http://www.helipay.com/" target="_blank">
-                        <img src="img/zhujianer.png" alt="helipay" />
-                    </a>
+    <div class="container">
+        <section class="sidebar-container">
+            <div class="avatar-container">
+                <img id="avatar" src="img/avatar.jpg" />
+            </div>
+            <div class="user-container">
+                <p class="p name">欧元</p>
+                <p class="p txt">web前端开发</p>
+            </div>
+            <div class="user-info-container">
+                <ul class="info-list">
+                    <li class="info-item">性别；男</li>
+                    <li class="info-item">年龄：29岁</li>
+                    <li class="info-item">经验；5年</li>
+                    <li class="info-item">手机；18620902160</li>
+                    <li class="info-item">邮箱；oujunyuan@163.com</li>
+                    <li class="info-item">学历；本科</li>
+                    <li class="info-item">博客；<a href="https://beyondouyuan.github.io/">博客</a></li>
+                </ul>
+            </div>
+            <div class="testch-container">
+                <h2 class="header">个人能力</h2>
+                <ul class="testch-list">
+                    <li class="testch-item">
+                        <p>HTML/CSS</p>
+                        <div class="proess-box">
+                            <div class="proess">
+                                <div class="blue"></div>
+                                <div class="white"></div>
+                            </div>
+                            <div class="txt">熟悉</div>
+                        </div>
+                    </li>
+                    <li class="testch-item">
+                        <p>JavaScript</p>
+                        <div class="proess-box">
+                            <div class="proess">
+                                <div class="blue"></div>
+                                <div class="white"></div>
+                            </div>
+                            <div class="txt">熟悉</div>
+                        </div>
+                    </li>
+                    <li class="testch-item">
+                        <p>Express/Koa/Egg</p>
+                        <div class="proess-box">
+                            <div class="proess">
+                                <div class="blue"></div>
+                                <div class="white"></div>
+                            </div>
+                            <div class="txt">熟悉</div>
+                        </div>
+                    </li>
+                    <li class="testch-item">
+                        <p>Vue/React</p>
+                        <div class="proess-box">
+                            <div class="proess">
+                                <div class="blue"></div>
+                                <div class="white"></div>
+                            </div>
+                            <div class="txt">熟悉</div>
+                        </div>
+                    </li>
+                    <li class="testch-item">
+                        <p>小程序/Taro</p>
+                        <div class="proess-box">
+                            <div class="proess">
+                                <div class="blue"></div>
+                                <div class="white"></div>
+                            </div>
+                            <div class="txt">熟悉</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="main-container">
+            <div class="person-containner">
+                <div class="header">
+                    <h2>教育经历</h2>
                 </div>
-                <div class="col-4">
-                    <h2><a href="http://www.helipay.com/" target="_blank">合利宝官网PC版</a></h2>
-                    <p>基于Gulp+SASS+Flex+CSS3 Animation的响应式网站</p>
-                    <p>兼容至IE8</p>
+                <div class="flex-box">
+                    <div class="flex-item">2011/09 - 2015/07</div>
+                    <div class="flex-item">西安工业大学</div>
+                    <div class="flex-item">本科 - 光电信息工程</div>
                 </div>
-                <div class="col-2 center">
-                    <a class="circle-img" href="http://beyondouyuan.github.io/mui_quick/" target="_blank">
-                        <img src="img/jwebaudio.png" alt="helipay" />
-                    </a>
+            </div>
+            <!-- job -->
+            <div class="job-containner">
+                <div class="header">
+                    <h2>工作经历</h2>
                 </div>
-                <div class="col-4">
-                    <h2><a href="http://beyondouyuan.github.io/mui_quick/" target="_blank">合利宝官网移动版</a></h2>
-                    <p>基于MUI+H5+接近于原生APP体验的HTML5网站</p>
+                <!-- 1 -->
+                <section class="section section-1">
+                    <div class="flex-box">
+                        <div class="flex-item">2019/03 - 至今</div>
+                        <div class="flex-item">广州力挚网络科技有限公司</div>
+                        <div class="flex-item">Web 前端开发工程师</div>
+                    </div>
+                    <ul class="job-list">
+                        <li class="job-list-item">负责公司国内租车项目主流程前端技术选型、项目骨架搭建、开发与维护</li>
+                        <li class="job-list-item">项目H5页面开发、小程序嵌入和移动APP混合开发</li>
+                        <li class="job-list-item">前端性能优化实现</li>
+                    </ul>
+                </section>
+                <!-- 2 -->
+                <section class="section section-2">
+                    <div class="flex-box">
+                        <div class="flex-item">2018/06 - 2019/01</div>
+                        <div class="flex-item">广州卡宝宝互联网金融信息
+                            服务股份有限公司</div>
+                        <div class="flex-item">Web 前端开发工程师</div>
+                    </div>
+                    <ul class="job-list">
+                        <li class="job-list-item">负责优化迭代公司前端项目</li>
+                        <li class="job-list-item">根据需求实现SEO优化解决方案</li>
+                    </ul>
+                </section>
+                <!-- 3 -->
+                <section class="section section-3">
+                    <div class="flex-box">
+                        <div class="flex-item">2017/06 - 2018/05</div>
+                        <div class="flex-item">广东链动网络科技有限公司</div>
+                        <div class="flex-item">Web 前端开发工程师</div>
+                    </div>
+                    <ul class="job-list">
+                        <li class="job-list-item">负责公司 oms 管理后台开发</li>
+                        <li class="job-list-item">负责维护公司商城管理系统</li>
+                        <li class="job-list-item">负责开发并维护公司微信公众号</li>
+                    </ul>
+                </section>
+                <!-- 4 -->
+                <section class="section section-4">
+                    <div class="flex-box">
+                        <div class="flex-item">2015/11 - 2017/06</div>
+                        <div class="flex-item">广州合利宝支付科技有限公
+                            司</div>
+                        <div class="flex-item">Web 前端开发工程师</div>
+                    </div>
+                    <ul class="job-list">
+                        <li class="job-list-item">负责公司PC端网站/系统平台以及WebAPP前端构建、开发工作</li>
+                        <li class="job-list-item">根据产品需求，与后端工程师协作完成前后端数据交互</li>
+                        <li class="job-list-item">负责前端可重用性代码编写及维护，并兼容各类浏览器，优化用户体验</li>
+                    </ul>
+                </section>
+                <!-- 5 -->
+                <section class="section section-5">
+                    <div class="flex-box">
+                        <div class="flex-item">2015/08 - 2015/08</div>
+                        <div class="flex-item">广州移领数赢网络技术有限
+                            公司</div>
+                        <div class="flex-item">Web 前端开发实习生</div>
+                    </div>
+                    <ul class="job-list">
+                        <li class="job-list-item">负责搭建并维护公司官网</li>
+                        <li class="job-list-item">项目H5页面开发、小程序嵌入和移动APP混合开发</li>
+                        <li class="job-list-item">负责公司产品项目的前端开发工作</li>
+                    </ul>
+                </section>
+            </div>
+            <!-- project -->
+            <div class="project-containner">
+                <div class="header">
+                    <h2>项目经历</h2>
                 </div>
-                <div class="clearboth"></div>
+                <!-- 1 -->
+                <section class="section section-1">
+                    <div class="flex-box">
+                        <div class="flex-item">2019/05 - 至今</div>
+                        <div class="flex-item">国内租车主流程</div>
+                        <div class="flex-item">Web 前端开发</div>
+                    </div>
+                    <div class="desc">
+                        项目介绍：
+                        <p class="pre">国内租车项目主要面向用户国内自驾游服务，作为公司由海外市场转向国内市场 的先锋。 项目主要功能包括但不限于:支持用户设备定位、用户搜索历史记录、前端筛选 报价数据、下单支付</p>
+                    </div>
+                    <h3 class="h3">我的职责；</h3>
+                    <ul class="job-list">
+                        <li class="job-list-item">前端项目技术选型以及项目骨架搭建</li>
+                        <li class="job-list-item">Egg作为中间层服务端与底层服务交互并为前端提供接口</li>
+                        <li class="job-list-item">React + Webpack 完成前端开发</li>
+                        <li class="job-list-item">主流程项目以webview方式嵌入APP平台以及微信和支付宝小程序多端开发</li>
+                        <li class="job-list-item">前端性能优化以及用户体验改进</li>
+                    </ul>
+                </section>
+                <!-- 2 -->
+                <section class="section section-2">
+                    <div class="flex-box">
+                        <div class="flex-item">2018/04 - 2018/05</div>
+                        <div class="flex-item">链动运营oms</div>
+                        <div class="flex-item">Web 前端开发</div>
+                    </div>
+                    <div class="desc">
+                        项目介绍：
+                        <p class="pre">项目主要为公司内部运营人员使用，进行一些数据管理以及操作功能。 包括对 账功能，报表导出需求，资源管理以及系统配置等功能需求</p>
+                    </div>
+                    <h3 class="h3">我的职责；</h3>
+                    <ul class="job-list">
+                        <li class="job-list-item">前后端分离开发，雨后端实现数据交互</li>
+                        <li class="job-list-item">Vue全家桶+Webpack完成前台开发</li>
+                    </ul>
+                </section>
+                <!-- 3 -->
+                <section class="section section-5">
+                    <div class="flex-box">
+                        <div class="flex-item">2018/03 - 2018/04</div>
+                        <div class="flex-item">链鱼 VIP 微信公众号</div>
+                        <div class="flex-item">Web 前端开发</div>
+                    </div>
+                    <div class="desc">
+                        项目介绍：
+                        <p class="pre">公司商城潜入公众号，可获取用户微信信息并使用微信快捷支付功能，商户扫码 后公众号需实时刷新二维码</p>
+                    </div>
+                    <h3 class="h3">我的职责；</h3>
+                    <ul class="job-list">
+                        <li class="job-list-item">前后端分离开发，雨后端实现数据交互</li>
+                        <li class="job-list-item">Vue全家桶+Webpack完成前台开发</li>
+                    </ul>
+                </section>
+                <!-- 4 -->
+                <section class="section section-5">
+                    <div class="flex-box">
+                        <div class="flex-item">2018/01 - 2018/02</div>
+                        <div class="flex-item">享选新零售</div>
+                        <div class="flex-item">Web 前端开发</div>
+                    </div>
+                    <div class="desc">
+                        项目介绍：
+                        <p class="pre">公司商城潜入公众号，可获取用户授权信息</p>
+                    </div>
+                    <h3 class="h3">我的职责；</h3>
+                    <ul class="job-list">
+                        <li class="job-list-item">前后端分离开发，雨后端实现数据交互</li>
+                        <li class="job-list-item">Vue全家桶+Webpack完成前台开发</li>
+                        <li class="job-list-item">使用微信JSDK获取微信分享等接口功能</li>
+                    </ul>
+                </section>
+                <!-- 5 -->
+                <section class="section section-5">
+                    <div class="flex-box">
+                        <div class="flex-item">2017/03 - 2017/04</div>
+                        <div class="flex-item">合利宝官网移动端</div>
+                        <div class="flex-item">Web 前端开发</div>
+                    </div>
+                    <div class="desc">
+                        项目介绍：
+                        <p class="pre">移动端公司官网</p>
+                    </div>
+                    <h3 class="h3">我的职责；</h3>
+                    <ul class="job-list">
+                        <li class="job-list-item">Gulp构建前端构架</li>
+                        <li class="job-list-item">jsonp处理前后端跨域问题</li>
+                    </ul>
+                </section>
+                <!-- 6 -->
+                <section class="section section-5">
+                    <div class="flex-box">
+                        <div class="flex-item">2017/03 - 2017/04</div>
+                        <div class="flex-item">合利宝官网 PC 端</div>
+                        <div class="flex-item">Web 前端开发</div>
+                    </div>
+                    <div class="desc">
+                        项目介绍：
+                        <p class="pre">PC 端公司官网 兼容 IE9</p>
+                    </div>
+                    <h3 class="h3">我的职责；</h3>
+                    <ul class="job-list">
+                        <li class="job-list-item">Gulp构建前端页面以及文件压缩</li>
+                        <li class="job-list-item">Sass作为CSS预处理</li>
+                        <li class="job-list-item">jsonp处理前后端跨域问题</li>
+                        <li class="job-list-item">调用高德地图API实现地图交互</li>
+                    </ul>
+                </section>
             </div>
-            <div class="row">
-                <div class="col-2 center">
-                    <a class="circle-img" href="https://github.com/beyondouyuan/manual/" target="_blank">
-                        <img src="img/jwebaudio.png" alt="helipay" />
-                    </a>
+            <!-- open -->
+            <div class="open-containner">
+                <div class="header">
+                    <h2>开源项目</h2>
                 </div>
-                <div class="col-4">
-                    <h2><a href="http://www.helipay.com/product/H5/" target="_blank">合利宝产品手册</a></h2>
-                    <p>基于Gulp+SASS+CSS3 Animation的HTML5活动宣传页</p>
-                </div>
-                <div class="clearboth"></div>
+                <!-- 1 -->
+                <section class="section section-1">
+                    <div class="flex-box">
+                        <div class="flex-item">2018/12 - 2019/01</div>
+                        <div class="flex-item">LightCreater H5可视化搭建系统</div>
+                        <div class="flex-item">Web开发</div>
+                    </div>
+                    <ul class="job-list">
+                        <li class="job-list-item">jwt用户登陆</li>
+                        <li class="job-list-item">可拖拽的H5页面运营业可视化搭建系统</li>
+                        <li class="job-list-item">服务端:Express+MongoDB提供后台api并实现渲染制作生成的H5页面</li>
+                        <li class="job-list-item">客户端:Vue+Vuex+Element开发前台</li>
+                        <li class="job-list-item">仓库:https://github.com/beyondouyuan/LightCreater</li>
+                    </ul>
+                </section>
+                <!-- 2 -->
+                <section class="section section-2">
+                    <div class="flex-box">
+                        <div class="flex-item">2018/10 - 2018/12</div>
+                        <div class="flex-item">LightCMS-内容发布系统</div>
+                        <div class="flex-item">Web开发</div>
+                    </div>
+                    <ul class="job-list">
+                        <li class="job-list-item">jwt 用户登陆权限</li>
+                        <li class="job-list-item">多权限用户系统 内容管理、发布、点赞文章功能</li>
+                        <li class="job-list-item">图片上传</li>
+                        <li class="job-list-item">markdown编辑内容</li>
+                        <li class="job-list-item">自定义菜单标签</li>
+                        <li class="job-list-item">实现前后端分离并支持SEO配置</li>
+                        <li class="job-list-item">服务端:Express+MongoDB提供RestfulAPI接口</li>
+                        <li class="job-list-item">客户端:nuxt实现服务端渲染</li>
+                        <li class="job-list-item">仓库:https://github.com/beyondouyuan/LightCMS</li>
+                    </ul>
+                </section>
+                <!-- 3 -->
+                <section class="section section-3">
+                    <div class="flex-box">
+                        <div class="flex-item">2018/10 - 2018/12</div>
+                        <div class="flex-item">LightMock API Mock 服 务</div>
+                        <div class="flex-item">Web开发</div>
+                    </div>
+                    <ul class="job-list">
+                        <li class="job-list-item">使用nodejs将mock数据直接保存至本地，而不使用数据库存储数据，如此无 需设计数据 model，提供可视化接口编辑，简单直接，实现极简 mock 模拟接口服 务</li>
+                        <li class="job-list-item">仓库:https://github.com/beyondouyuan/LightMock</li>
+                    </ul>
+                </section>
             </div>
-            <p class="center">更多精彩，敬请移步 <a href="https://github.com/beyondouyuan/" target="_blank" class="highlight">GitHub</a></p>
-        </div>
-        <div class="section center" id="profession">
-            <h1>擅长技术</h1>
-            <div class="tag-panel">
-                <div class="tag expert">Node</div>
-                <div class="tag expert">React</div>
-                <div class="tag familiar">Vue</div>
-            </div>
-            <div class="tag-panel">
-                <div class="tag expert">HTML5</div>
-                <div class="tag expert">CSS3</div>
-                <div class="tag familiar">SASS</div>
-                <div class="tag familiar">LESS</div>
-            </div>
-            <div class="tag-panel">
-                <div class="tag expert">JavaScript</div>
-                <div class="tag expert">jQuery</div>
-                <div class="tag expert">Zepot</div>
-                <div class="tag expert">Bootstrap</div>
-            </div>
-            <div class="tag-panel">
-                <div class="tag familiar">Ajax</div>
-                <div class="tag familiar">JSON</div>
-                <div class="tag familiar">JSONP</div>
-            </div>
-            <div class="tag-panel">
-                <div class="tag expert">Gulp</div>
-                <div class="tag familiar">Webpack</div>
-            </div>
-            <div class="tag-panel">
-                <div class="tag expert">Yeoman</div>
-            </div>
-        </div>
-        <div class="section center">
-            <h1>教育背景</h1>
-            <p>西安工业大学 本科</p>
-            <p>光电学院 光电信息工程专业</p>
-            <h4><a href="#" target="_blank" class="highlight">赶紧预聘我吧！</a></h4>
-        </div>
-        <div class="section center">
-            <h1>工作经历</h1>
-            <h2>广州合利宝支付科技有限公司——Web前端开发</h2>
-            <p>2015年11月 - 至今</p>
-            <h2>广州移领数赢网络技术有限公司——Web前端开发</h2>
-            <p>2015年8月 - 2015年11月</p>
-        </div>
-        <div class="section center">
-            <h1>职位</h1>
-            <h2>Web前端工程师</h2>
-            <h6>工作地点：广州、深圳</h6>
-            <p>当然，如果offer足够慷慨，我说不定也可以考虑异地看看！</p>
-            <h4><a href="#" target="_blank" class="highlight">招我到碗里来吧！</a></h4>
-        </div>
-        <div class="section center">
-            <h1>了解更多</h1>
-            <h2><a href="https://github.com/beyondouyuan/" target="_blank">GitHub</a></h2>
-            <p>博客: <a href="http://beyondouyuan.github.io/" target="_blank">小楼昨夜前端雨</a></p>
-            <h2><a href="irving.pdf" class="highlight" download="Web前端开发工程师-欧援">下载简历</a></h2>
-            <div id="contact-panel">
-                <a class="social-share-element social-git" href="https://github.com/beyondouyuan/" target="_blank" title="fork on github" onclick="_gaq.push(['_trackEvent', 'Follow', 'Twitter', 'InCv']);"></a>
-            </div>
-        </div>
+        </section>
     </div>
-    <link rel="stylesheet" href="../blog/css/font.css" type="text/css" />
-    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js">
-    </script>
-    <script>
-    window.jQuery || document.write('<script src="../blog/js/jquery-1.11.1.min.js"><\/script>');
-    </script>
-    <script type="text/javascript" src="vendor/jquery.pagepiling.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>
