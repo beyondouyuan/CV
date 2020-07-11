@@ -2,7 +2,7 @@
 * @Author: beyondouyuan
 * @Date:   2020-07-11 23:14:22
 * @Last Modified by:   beyondouyuan
-* @Last Modified time: 2020-07-12 00:35:21
+* @Last Modified time: 2020-07-12 01:06:27
 * @E-mail: beyondouyuan@gmail.com
 * @Github: https://beyondouyuan.github.io/
 * @description: 写代码就像写诗一样
@@ -26,7 +26,7 @@ ul,li {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: flex-start;
   background-color: #F0F0F0;
 }
@@ -36,7 +36,7 @@ ul,li {
   min-width: 260px;
   padding: 1vw;
   box-sizing: border-box;
-  height: 100%;
+  /*height: 100%;*/
   color: white;
   background-color: #1F2C33;
   box-shadow: 1px 5px 3px #1F2C33;
